@@ -64,8 +64,8 @@ const RESOURCES = {"icons/Icon-512.png": "f67d9e37a3c1e9d7ea166729aea51abc",
 "assets/fonts/Symbola.ttf": "156be6c48c85484c970d103657e14601",
 "assets/fonts/times-new-roman-italic.ttf": "e3d6e9ea74f51afbfc9071e214ddb9e8",
 "assets/AssetManifest.json": "55d1c83656c480a07b390349ab9afd3d",
-"index.html": "75b319ce0c92bbeab90ee06574ac4c61",
-"/": "75b319ce0c92bbeab90ee06574ac4c61",
+"index.html": "6f2db0cc8c42a8d7c7afc8bc0ff2b8cb",
+"/": "6f2db0cc8c42a8d7c7afc8bc0ff2b8cb",
 "manifest.json": "ec76723352e271985372d13c45234b6f"};
 // The application shell files that are downloaded before a service worker can
 // start.
