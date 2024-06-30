@@ -17,7 +17,7 @@ jobs:
           echo "Waiting for Netlify deployment to start..."
           
           while true; do
-            response=$(curl -s -H "Authorization: Bearer ${{ secrets.NETLIFY_AUTH_TOKEN }}" https://api.netlify.com/api/v1/sites/${{ secrets.NETLIFY_SITE_ID }}/deploys?branch=main&per_page=1)
+            response=$(curl -s -H "Authorization: Bearer ${{ secrets.NETLIFY_ACCESS_TOKEN }}" https://api.netlify.com/api/v1/sites/${{ secrets.NETLIFY_SITE_ID }}/deploys?branch=main&per_page=1)
             deploy_id=$(echo $response | jq -r '.[0].id')
             status=$(echo $response | jq -r '.[0].state')
             
@@ -30,7 +30,7 @@ jobs:
           done
           
           while true; do
-            response=$(curl -s -H "Authorization: Bearer ${{ secrets.NETLIFY_AUTH_TOKEN }}" https://api.netlify.com/api/v1/sites/${{ secrets.NETLIFY_SITE_ID }}/deploys?branch=main&per_page=1)
+            response=$(curl -s -H "Authorization: Bearer ${{ secrets.NETLIFY_ACCESS_TOKEN }}" https://api.netlify.com/api/v1/sites/${{ secrets.NETLIFY_SITE_ID }}/deploys?branch=main&per_page=1)
             status=$(echo $response | jq -r '.[0].state')
             
             echo "Current status: $status"
@@ -44,7 +44,7 @@ jobs:
             fi
             
             # Get the latest log messages
-            log=$(curl -s -H "Authorization: Bearer ${{ secrets.NETLIFY_AUTH_TOKEN }}" https://api.netlify.com/api/v1/deploys/$deploy_id/log)
+            log=$(curl -s -H "Authorization: Bearer ${{ secrets.NETLIFY_ACCESS_TOKEN }}" https://api.netlify.com/api/v1/deploys/$deploy_id/log)
             echo "$log" | tail -n 5
             
             sleep 10
@@ -52,7 +52,7 @@ jobs:
 
       - name: Get Full Netlify Deploy Log
         run: |
-          curl -H "Authorization: Bearer ${{ secrets.NETLIFY_AUTH_TOKEN }}" https://api.netlify.com/api/v1/deploys/$deploy_id/log > netlify_deploy_log.txt
+          curl -H "Authorization: Bearer ${{ secrets.NETLIFY_ACCESS_TOKEN }}" https://api.netlify.com/api/v1/deploys/$deploy_id/log > netlify_deploy_log.txt
 
       - name: Upload Netlify Deploy Log
         uses: actions/upload-artifact@v2
