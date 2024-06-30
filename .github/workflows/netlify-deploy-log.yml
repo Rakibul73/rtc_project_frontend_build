@@ -50,12 +50,4 @@ jobs:
             sleep 10
           done
 
-      - name: Get Full Netlify Deploy Log
-        run: |
-          curl -H "Authorization: Bearer ${{ secrets.NETLIFY_ACCESS_TOKEN }}" https://api.netlify.com/api/v1/deploys/$deploy_id/log > netlify_deploy_log.txt
-
-      - name: Upload Netlify Deploy Log
-        uses: actions/upload-artifact@v2
-        with:
-          name: netlify-deploy-log
-          path: netlify_deploy_log.txt
+  
