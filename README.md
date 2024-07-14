@@ -1,5 +1,6 @@
 | Commit Message | Commit Time |
 | -------------- | ----------- |
+| updated again fixed yml | Sun Jul 14 18:04:20 2024 +0600 |
 | fixed some error|Sun Jul 14 12:37:30 2024 +0600 |
 | removed debug print|Sat Jul 13 19:09:44 2024 +0600 |
 | removed build from main repo|Sun Jun 30 19:29:41 2024 +0600 |
