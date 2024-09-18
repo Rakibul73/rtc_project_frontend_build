@@ -1,5 +1,6 @@
 | Commit Message | Commit Time |
 | -------------- | ----------- |
+| revert back old git wokrflow | Wed Sep 18 14:46:15 2024 +0600 |
 | Merge branch 'main' of https://github.com/Rakibul73/rtc_project_fronend | Wed Sep 18 14:21:07 2024 +0600 |
 | url deeplink handler for netlify | Wed Sep 18 14:07:41 2024 +0600 |
 | removed hash from url | Wed Sep 18 13:13:08 2024 +0600 |
