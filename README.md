@@ -1,5 +1,6 @@
 | Commit Message | Commit Time |
 | -------------- | ----------- |
+| removed hash from url | Wed Sep 18 13:13:08 2024 +0600 |
 | fixed default img bug | Wed Sep 18 12:14:33 2024 +0600 |
 | updated again fixed yml | Sun Jul 14 18:04:20 2024 +0600 |
 | fixed some error|Sun Jul 14 12:37:30 2024 +0600 |
