@@ -1,5 +1,6 @@
 | Commit Message | Commit Time |
 | -------------- | ----------- |
+| url deeplink handler for netlify | Wed Sep 18 14:07:41 2024 +0600 |
 | removed hash from url | Wed Sep 18 13:13:08 2024 +0600 |
 | fixed default img bug | Wed Sep 18 12:14:33 2024 +0600 |
 | updated again fixed yml | Sun Jul 14 18:04:20 2024 +0600 |
