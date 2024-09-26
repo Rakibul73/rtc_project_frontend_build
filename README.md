@@ -1,5 +1,6 @@
 | Commit Message | Commit Time |
 | -------------- | ----------- |
+| added simple dashboard | Thu Sep 26 16:59:46 2024 +0600 |
 | revert back url path | Wed Sep 18 15:58:46 2024 +0600 |
 | revert back url path | Wed Sep 18 14:47:37 2024 +0600 |
 | revert back url path | Wed Sep 18 14:47:37 2024 +0600 |
