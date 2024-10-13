@@ -1,5 +1,6 @@
 | Commit Message | Commit Time |
 | -------------- | ----------- |
+| completed project deletion request | Sun Oct 13 20:42:29 2024 +0600 |
 | updated some fix | Sun Oct 13 18:53:45 2024 +0600 |
 | fixed bug of user profile screen for admin view | Sat Oct 12 23:32:18 2024 +0600 |
 | fixed dob bug | Sat Oct 12 22:34:10 2024 +0600 |
